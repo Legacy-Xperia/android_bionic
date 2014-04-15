@@ -159,7 +159,6 @@ libc_common_src_files := \
 	bionic/pathconf.c \
 	bionic/perror.c \
 	bionic/pread.c \
-	bionic/pselect.c \
 	bionic/ptsname.c \
 	bionic/ptsname_r.c \
 	bionic/pututline.c \
@@ -240,6 +239,7 @@ endif
 
 libc_bionic_src_files := \
     bionic/assert.cpp \
+    bionic/bionic_time_conversions.cpp \
     bionic/brk.cpp \
     bionic/dirent.cpp \
     bionic/__errno.c \
@@ -251,9 +251,14 @@ libc_bionic_src_files := \
     bionic/libc_init_common.cpp \
     bionic/libc_logging.cpp \
     bionic/libgen.cpp \
+<<<<<<< HEAD
     bionic/__memcpy_chk.cpp \
     bionic/__memmove_chk.cpp \
     bionic/__memset_chk.cpp \
+=======
+    bionic/mmap.cpp \
+    bionic/poll.cpp \
+>>>>>>> 9fcc00e... Add support for ppoll and pselect
     bionic/pthread_attr.cpp \
     bionic/pthread_detach.cpp \
     bionic/pthread_equal.cpp \
